@@ -1,0 +1,62 @@
+{
+  "name": "countDown",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./lib/index",
+  "scripts": {
+    "dev": "node ./bin/www",
+    "build": "babel src -d lib && lessc assets/index.less > assets/index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "config": {
+    "port": 12315
+  },
+  "author": "qccrTeam",
+  "license": "ISC",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "babel": {
+    "presets": [
+      "stage-0",
+      "react",
+      "es2015"
+    ],
+    "plugins": [
+      "add-module-exports"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.5",
+    "babel-cli": "^6.23.0",
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "babel-runtime": "^6.23.0",
+    "css-loader": "^0.26.2",
+    "less": "^2.7.2",
+    "less-loader": "^2.2.3",
+    "postcss-loader": "^1.3.2",
+    "style-loader": "^0.13.2",
+    "tnt-score": "^1.6.8",
+    "url-loader": "^0.5.8",
+    "webpack": "1.12.2",
+    "webpack-dev-middleware": "1.8.4",
+    "webpack-dev-server": "1.12.1",
+    "webpack-hot-middleware": "2.13.1"
+  },
+  "files": [
+    "lib",
+    "assets/*.css"
+  ]
+}
