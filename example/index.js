@@ -16,7 +16,7 @@ import "../assets/index.less"
 
 render(
 <div>
-<CountDown {{year="2017"}}
+<CountDown year={"2017"}
 />
 </div>
 , document.getElementById('app'));
