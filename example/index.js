@@ -13,10 +13,15 @@ import { render } from 'react-dom';
 import CountDown from '../src/index'
 
 import "../assets/index.less"
-
+var go=function () {
+	location.href="https://www.baidu.com";
+}
 render(
 <div>
-<CountDown year={"2017"}
+<CountDown 
+	endTime={"2018/3/22 16:30:00"}
+	showNum={4}
+	onComplete={go}
 />
 </div>
 , document.getElementById('app'));
